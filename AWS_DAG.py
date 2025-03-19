@@ -19,7 +19,7 @@ ATHENA_TABLE = "my_portfolio_data"
 ATHENA_OUTPUT = f"s3://{S3_BUCKET}/athena-results/"
 
 default_args = {
-    "owner": "Bhagath AWS ETL PipeLine",
+    "owner": "bhagath yennam",
     "start_date": days_ago(0),
     "retries": 1
 }
