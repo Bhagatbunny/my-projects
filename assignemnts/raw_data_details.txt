@@ -1,0 +1,15 @@
+"""Data Details:
+
+The data in the Raw sheet contains multiple entries with the same record_id but different URLs.
+Each record_id is a unique key and should not be duplicated in the final output.
+Task Instructions:
+
+Consolidate the data from the Raw sheet into the specified output format provided in the file.
+
+Ensure that data from multiple sources with the same record_id is merged into a single row in the output sheet.
+Verify that the record_id remains unique in the final output sheet.
+Deliverables:
+
+A completed output sheet adhering to the specified format.
+Any additional notes or observations encountered during the processing, if applicable.
+-------------------------------------------------------------------------------------------------------"""
