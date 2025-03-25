@@ -6,7 +6,7 @@ from airflow.providers.amazon.aws.operators.glue import GlueJobOperator
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
-import generate_data_bucket
+from nse_data_to_s3 import generate_data_bucket
 from datetime import datetime
 
 # Define variables
