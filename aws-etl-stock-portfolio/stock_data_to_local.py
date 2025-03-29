@@ -2,8 +2,10 @@ from nsetools import Nse
 import pandas as pd
 import time
 import os
+import sys
 import boto3
 from dotenv import load_dotenv
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from utils import FileUtils
 
 load_dotenv()
@@ -43,7 +45,7 @@ def fetch_stock_data(my_stocks):
             logger.info(f"Fetched Data: {stock_info}")
             stock_data.append(stock_info)
             
-            time.sleep(1)  # delay to prevent API blocking
+            time.sleep(3)  # delay to prevent API blocking
         except Exception as e:
             logger.error(f"Error fetching {stock}: {e}")
     return pd.DataFrame(stock_data)
