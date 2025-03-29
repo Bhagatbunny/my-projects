@@ -1,6 +1,6 @@
 CREATE TABLE bun.my_stock_portfolio (
     stock TEXT,
-	quantity INT,
+    quantity INT,
     last_price NUMERIC(10,2),
     change NUMERIC(10,2),
     change_percent NUMERIC(10,2),
