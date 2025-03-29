@@ -1,4 +1,4 @@
-Stock Data Fetching & Storage Script
+Stock Portfolio Tracker (NSE) with PostgreSQL
 Overview
 This script automates fetching stock prices from Yahoo Finance (NSE), processes key financial metrics, and stores the results in a PostgreSQL database. Additionally, it saves the transformed data as a CSV file for local reference.
 
