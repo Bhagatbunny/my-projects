@@ -73,6 +73,7 @@ def transfrom_data(df, my_stocks):
     df["Total_Returns"] = (df["Last_Price"] - df["Buy_Price"]) * df["Quantity"]
     df["One_Day_Returns"] = df["Change"] * df["Quantity"]
     df["PL_Percentage"] = (df["Total_Returns"] / (df["Quantity"] * df["Last_Price"])) * 100
+    df["PL_Percentage"] = df["PL_Percentage"].round(2)
 
     # df = df[df["Total_Returns"] > 0]
     df.columns = df.columns.str.lower() 
